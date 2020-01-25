@@ -1,1 +1,0 @@
-# ManufacturerDetails_UI_Code
