@@ -1,0 +1,22 @@
+<p>ManufacturerDetails</p>
+<form >
+  Enter Manufacturer name: <input type="text" name="manufacturer" [(ngModle)]="manfacture_name"><br>
+  <input type="submit" (click)="getManufacturerDetails($event)">
+</form>
+
+<table width="100%">
+  <tr>
+    <th>Mfr ID</th>
+    <th>Mfr Name</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Country</th>
+  </tr>
+  <tr *ngFor="let data of ManufacturerDetails">
+    <td>{{data.Mfr_ID}}</td>
+    <td>{{data.Mfr_Name}}</td>
+    <td>{{data.City}}</td>
+    <td>{{data.State}}</td>
+    <td>{{data.Country}}</td>
+  </tr>
+</table>
